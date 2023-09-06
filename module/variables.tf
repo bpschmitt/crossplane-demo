@@ -10,3 +10,11 @@ variable "nr_region" {
     type = string
     default = "US"
 }
+
+variable "nr_alert_policy_name" {
+    type = string
+}
+
+variable "nr_cluster_name" {
+    type = string
+}

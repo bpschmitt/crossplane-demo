@@ -1,0 +1,7 @@
+{
+    "nr_account_id": "123456",
+    "nr_api_key": "NRAK-THERESTOFYOURKEYHERE",
+    "nr_region": "US",
+    "nr_alert_policy_name": "Crossplane Demo",
+    "nr_cluster_name": "crossplane"
+}

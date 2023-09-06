@@ -1,8 +1,0 @@
-# New Relic Account ID
-nr_account_id = "123456"
-
-# New Relic User API Key
-nr_api_key = "YOUR USER API KEY"
-
-# New Relic Region
-nr_region = "US"

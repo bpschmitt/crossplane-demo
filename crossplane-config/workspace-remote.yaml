@@ -1,0 +1,25 @@
+apiVersion: tf.upbound.io/v1beta1
+kind: Workspace
+metadata:
+  name: newrelic-alerts
+  annotations:
+    # The terraform workspace will be named 'coolbucket'. If you omit this
+    # annotation it would be derived from metadata.name - e.g. 'example-inline'.
+    crossplane.io/external-name: newrelic-alerts
+spec:
+  forProvider:
+    # Workspaces default to using a remote source - like workspace-remote.yaml.
+    # For simple cases you can use an inline source to specify the content of
+    # main.tf as opaque, inline HCL.
+    source: Remote
+    module: git::https://github.com/bpschmitt/crossplane-demo/tree/main/module
+    varFiles:
+    - source: SecretKey
+      secretKeyRef:
+        namespace: default
+        name: terraform
+        key: terraform.tfvars.json
+      format: JSON
+  writeConnectionSecretToRef:
+    namespace: default
+    name: newrelic

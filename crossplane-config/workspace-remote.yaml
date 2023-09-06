@@ -12,7 +12,7 @@ spec:
     # For simple cases you can use an inline source to specify the content of
     # main.tf as opaque, inline HCL.
     source: Remote
-    module: git::https://github.com/bpschmitt/crossplane-demo?ref=main
+    module: https://github.com/bpschmitt/crossplane-demo/module
     varFiles:
     - source: SecretKey
       secretKeyRef:

@@ -1,3 +1,3 @@
 module "crossplane-newrelic" {
-  source  = "../module"
+  source  = "./module"
 }

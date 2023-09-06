@@ -40,3 +40,9 @@ $ kubectl get workspaces
 NAME              READY   SYNCED   AGE
 newrelic-alerts   True    True     11m
 ```
+
+# Validation
+
+If successful, you should see the `Crossplane Demo` alert policy created in your New Relic account.
+
+![alert condition](https://p191.p3.n0.cdn.getcloudapp.com/items/7KuXeXOj/d3e4c04a-084a-4f57-986f-227c2ba31958.jpg?v=0fac78c1954335a22f3222d8244e755b)
